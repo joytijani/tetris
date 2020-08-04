@@ -1,23 +1,7 @@
-# Project 1: Tetris Game
-## Due Date: Jun 11, 2019 11:59 PM
-## Assignment Type: Closed [(see policy)](http://www.cs.umd.edu/class/summer2019/cmsc132/openClosedPolicy.shtml)
+# Project: Tetris Game
 
 # Overview
-For this project, you will implement code for the Tetris game. The graphical user interface has been provided to you in a package called **gui**. No part of the assignment involves you making any changes to code in this package. You will be implementing some of the functionality for the Tetris game by modifying classes provided to you in the **model** package.
-
-# Objectives
-This project will allow you to practice two-dimensional arrays, abstract classes, inheritance, and test development.
-
-# Grading
-* Public Tests (50%)
-* Release Tests (40%)
-* Style (10%)
-
-# Code Distribution
-You are provided with the following packages:
-* gui - Represents the graphical user interface for the game. Executing the main method of the GameGUI class in this package will launch the user interface (assuming your code compiles successfully).
-* model - Includes the classes you need to implement.
-* tests - Includes the public tests. You should add your student test class to this package.
+In this project, I implemented code for the Tetris game. 
 
 # Tetromino
 A tetromino is a game piece that can have one of seven shapes, each with a distinct color as shown in the table below.
@@ -64,32 +48,6 @@ Some things to note are:
 * Take note of where each tetromino is inserted into the board. This can be done by going through the public tests, however usually the heuristic is top left square of each piece is placed in the center of the board. 
 * The game ends when a new piece cannot be placed onto the board. 
 
-You can watch a video of the completed game being played [here](https://www.youtube.com/watch?v=ZTSXeSgZFtQ&feature=youtu.be). For more information about Tetris, click [here](https://en.wikipedia.org/wiki/Tetris).
 
-# Specification
-You are expected to implement methods for the Tetromino, I, J, L, O, S, T and Z classes. The other classes have been provided and you should not modify them. You should familiarize yourself with the Tetris Class.
 
-# Requirements/Project Policies
-* You may not add any classes, but feel free to add any instance variables and private methods you understand are necessary.
-* See [Style Guidelines](http://www.cs.umd.edu/class/summer2017/cmsc132/resources/StyleGuidelines.html) for information regarding style.
-* We cannot provide any information regarding release and secret tests. Once your project has been graded, you can see a TA if you would like to find out why you failed a release or secret test.
 
-# Testing
-We encourage you to run the game GUI and interact with the game. However, such an interaction is not guaranteed to test the full range of your code. As such, we also encourage you to write student tests. Student tests demonstrating a particular issue you are encountering with your code will be requested upon seeking help during office hours.
-
-# Submission
-To submit your project, zip the project folder and upload the zipped file to gradescope.
-
-# Tips on Getting Started
-You have been provided with a class to represent each possible Tetris piece (a tetromino). We suggest that you start with the simplest tetromino (like O or I).
-
-Also:
-* Processing the movement are same for all tetrominos. Therefore, they can be implemented in the Tetromino class.
-* Each layout if a tetrimino can be represented as the top-left cell position (0,0) and relative locations of other cells.
-* Location is the location of the tetromino on the game board.
-* X is horizontal axis and the Y is the vertial axis.
-* Successful left or right move updates the location.
-* Successful rotation updates the layout and location
-
-# Academic Integrity
-Please make sure you read the academic integrity section of the syllabus so you understand what is permissible in our programming projects. We want to remind you that we check your project against other students' projects and any case of academic dishonesty will be referred to the Office of Student Conduct. 
